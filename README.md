@@ -1,2 +1,1 @@
-# dotfiles
-dotfiles dos meus computadores
+# mac os .config
