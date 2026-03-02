@@ -8,25 +8,31 @@ $git_branch\
 $git_state\
 $git_status\
 $cmd_duration\
-$line_break\
 $python\
-$character"""
+$character\
+"""
+
+[username]
+style_user = '#073642'
+disabled = false
+show_always = true
+aliases = { "luizgustavo" = "ada" }
 
 [directory]
-style = "blue"
+style = "#2aa198"
 
 [character]
-success_symbol = "[λ](purple)"
-error_symbol = "[λ](red)"
-vimcmd_symbol = "[λ](green)"
+success_symbol = "[λ](black bold)"
+error_symbol = "[λ](red bold)"
+vimcmd_symbol = "[λ](green bold)"
 
 [git_branch]
 format = "[$branch]($style)"
-style = "bright-black"
+style = "#073642 bold"
 
 [git_status]
 format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
-style = "cyan"
+style = "#2aa198 "
 conflicted = "​"
 untracked = "​"
 modified = "​"
@@ -37,14 +43,14 @@ stashed = "≡"
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "bright-black"
+style = "#073642"
 
 [cmd_duration]
 format = "[$duration]($style) "
-style = "yellow"
+style = "#b58900"
 
 [python]
 format = "[$virtualenv]($style) "
-style = "bright-black"
+style = "#073642"
 detect_extensions = []
 detect_files = []

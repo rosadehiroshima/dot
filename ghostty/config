@@ -1,4 +1,9 @@
-theme = dark:iTerm2 Solarized Dark,light:iTerm2 Solarized Light
-font-family = "Monaco"
+# theme = dark:iTerm2 Solarized Dark,light:iTerm2 Solarized Light
+theme = iTerm2 Solarized Light
+cursor-style = block 
+cursor-style-blink = false
+cursor-color = "#002b36"
 
-shell-integration-features = ssh-terminfo,ssh-env
+font-family = "Monaco"
+shell-integration-features = ssh-terminfo,ssh-env,no-cursor
+
