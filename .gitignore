@@ -1,9 +1,34 @@
-/*
+# Arquivos do Sistema Operacional (macOS)
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
 
-!.gitignore
-!README.md
-!.zshrc
-!.git
+# Thumbnails e Arquivos de Lixo
+._*
+.Spotlight-V100
+.Trashes
 
-!/ghostty/
-!starship.toml
+# Pastas Pessoais Padrão do Mac (Por segurança)
+Desktop/
+Documents/
+Downloads/
+Library/
+Movies/
+Music/
+Pictures/
+Public/
+
+# Caches e Temporários
+.cache/
+.npm/
+.nvm/
+.zcompdump*
+.zsh_sessions/
+.zsh_history
+*.swp
+*.swo
+
+# Configurações de Editor e Ferramentas que você talvez não queira versionar
+.vscode/
+.copilot/
