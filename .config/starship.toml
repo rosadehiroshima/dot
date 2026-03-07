@@ -9,6 +9,7 @@ $git_state\
 $git_status\
 $cmd_duration\
 $python\
+$line_break\
 $character\
 """
 
@@ -17,13 +18,13 @@ format = '[$user]($style) '
 style_user = '#073642'
 disabled = false
 show_always = true
-aliases = { "luizgustavo" = "l" }
+aliases = { "luizgustavo" = "pam" }
 
 [directory]
 style = "#2aa198"
 
 [character]
-success_symbol = "[λ](black bold)"
+success_symbol = "[λ](#d33682 bold)"
 error_symbol = "[λ](red bold)"
 vimcmd_symbol = "[λ](green bold)"
 
