@@ -1,6 +1,5 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-# Ativa a paleta que criamos no final do arquivo
 palette = "solarized"
 
 format = """
@@ -60,9 +59,8 @@ style = "texto_base"
 detect_extensions = []
 detect_files = []
 
-# --- DEFINIÇÃO DAS CORES (TEMA ESCURO) ---
 [palettes.solarized]
-texto_base = "#839496" # Cor clara (base0) para contrastar no fundo escuro
+texto_base = "#839496"
 ciano = "#2aa198"
 magenta = "#d33682"
 amarelo = "#b58900"
