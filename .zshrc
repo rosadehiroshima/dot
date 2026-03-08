@@ -1,3 +1,9 @@
+if defaults read -g AppleInterfaceStyle &>/dev/null; then
+    export STARSHIP_CONFIG="$HOME/.config/starship_dark.toml"
+else
+    export STARSHIP_CONFIG="$HOME/.config/starship_light.toml"
+fi
+
 eval "$(starship init zsh)"
 
 export NVM_DIR="$HOME/.nvm"

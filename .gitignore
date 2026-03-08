@@ -1,15 +1,12 @@
-# Arquivos do Sistema Operacional (macOS)
 .DS_Store
 .AppleDouble
 .LSOverride
 Icon
 
-# Thumbnails e Arquivos de Lixo
 ._*
 .Spotlight-V100
 .Trashes
 
-# Pastas Pessoais Padrão do Mac (Por segurança)
 Desktop/
 Documents/
 Downloads/
@@ -19,7 +16,6 @@ Music/
 Pictures/
 Public/
 
-# Caches e Temporários
 .cache/
 .npm/
 .nvm/
@@ -29,6 +25,5 @@ Public/
 *.swp
 *.swo
 
-# Configurações de Editor e Ferramentas que você talvez não queira versionar
 .vscode/
 .copilot/

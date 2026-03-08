@@ -1,0 +1,71 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Ativa a paleta que criamos no final do arquivo
+palette = "solarized"
+
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$cmd_duration\
+$python\
+$line_break\
+$character\
+"""
+
+[username]
+format = '[$user]($style) '
+style_user = 'texto_base'
+disabled = false
+show_always = true
+aliases = { "luizgustavo" = "pam" }
+
+[directory]
+style = "ciano"
+
+[character]
+success_symbol = "[λ](magenta bold)"
+error_symbol = "[λ](vermelho bold)"
+vimcmd_symbol = "[λ](verde bold)"
+
+[git_branch]
+format = '[$branch]($style)'
+style = "texto_base bold"
+
+[git_status]
+format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](rosa) ($ahead_behind$stashed)]($style)"
+style = "ciano"
+conflicted = "​"
+untracked = "​"
+modified = "​"
+staged = "​"
+renamed = "​"
+deleted = "​"
+stashed = "≡"
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "texto_base"
+
+[cmd_duration]
+format = "[$duration]($style) "
+style = "amarelo"
+
+[python]
+format = "[$virtualenv]($style) "
+style = "texto_base"
+detect_extensions = []
+detect_files = []
+
+# --- DEFINIÇÃO DAS CORES (TEMA ESCURO) ---
+[palettes.solarized]
+texto_base = "#839496" # Cor clara (base0) para contrastar no fundo escuro
+ciano = "#2aa198"
+magenta = "#d33682"
+amarelo = "#b58900"
+vermelho = "#dc322f"
+verde = "#859900"
+rosa = "218"
