@@ -59,7 +59,7 @@ style = "#b58900"
 
 [python]
 format = "[$virtualenv]($style) "
-style = "#586e75"
+style = "#859900"
 detect_extensions = []
 detect_files = []
 
