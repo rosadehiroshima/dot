@@ -10,18 +10,17 @@ $git_status\
 $cmd_duration\
 $line_break\
 $python\
-$character\
-"""
+$character"""
 
 [username]
-format = '[$user]($style)[@](#dc322f)'
+format = '[$user]($style)'
 style_user = '#586e75'
 disabled = false
 show_always = true
 aliases = { "luizgustavo" = "luca" }
 
 [hostname]
-format = '[$hostname]($style) '
+format = '[ :: ](#859900)[$hostname]($style) '
 style = '#586e75'
 ssh_only = false
 aliases = { "MacBook-Air" = "mac" }
@@ -41,12 +40,12 @@ style = "#586e75 bold"
 [git_status]
 format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](#6c71c4) ($ahead_behind$stashed)]($style)"
 style = "#2aa198"
-conflicted = "​"
-untracked = "​"
-modified = "​"
-staged = "​"
-renamed = "​"
-deleted = "​"
+conflicted = ""
+untracked = ""
+modified = ""
+staged = ""
+renamed = ""
+deleted = ""
 stashed = "≡"
 
 [git_state]
@@ -62,4 +61,3 @@ format = "[$virtualenv]($style) "
 style = "#859900"
 detect_extensions = []
 detect_files = []
-
