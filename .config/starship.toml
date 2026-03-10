@@ -1,48 +1,72 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
+$username\
+$hostname\
 $directory\
 $git_branch\
+$git_state\
 $git_status\
+$cmd_duration\
+$line_break\
 $haskell\
 $python\
 $character"""
 
+[username]
+style_user = "#859900"
+style_root = "bold #dc322f"
+format = "[$user]($style) · "
+show_always = true
+aliases = { "luizgustavo" = "(*ˊᵕˋ*)" }
+
+[hostname]
+style = "#586e75"
+disabled = true
+format = "[$hostname]($style) "
+ssh_only = false
+aliases = { "MacBook-Air" = "air" }
+
 [directory]
-style = "bold #268bd2"
+style = "#268bd2"
 format = "[$path]($style) "
-truncation_length = 2
+truncation_length = 3
 
 [git_branch]
-symbol = ""
-style = "bold #6c71c4"
-format = "[:: $branch]($style) "
+format = "[:: $branch]($style)"
+style = "#586e75"
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "#586e75"
 
 [git_status]
-format = '([\[$all_status$ahead_behind\]]($style) )'
-style = "#586e75"
-conflicted = "="
-untracked = "?"
-modified = "!"
-staged = "+"
-renamed = ">"
-deleted = "x"
-ahead = "^"
-behind = "v"
+format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](bold #cb4b16) ($ahead_behind$stashed)]($style)"
+style = "#2aa198"
+conflicted = "​"
+untracked = "​"
+modified = "​"
+staged = "​"
+renamed = "​"
+deleted = "​"
+stashed = "≡"
+
+[cmd_duration]
+format = "[$duration]($style) "
+style = "#b58900"
 
 [haskell]
 symbol = "λ"
-style = "bold #6c71c4"
+style = "#6c71c4"
 format = '([$symbol $version]($style) )'
 
 [python]
-symbol = "py"
-style = "#859900"
-format = '([$symbol $virtualenv]($style) )'
+format = "[$virtualenv]($style) "
+style = "#586e75"
+detect_extensions = []
+detect_files = []
 
 [character]
-success_symbol = "[λ>](bold #d33682)"
-error_symbol = "[λ>](bold #dc322f)"
-
-[cmd_duration]
-disabled = true
+success_symbol = "[λ](#d33682)"
+error_symbol = "[λ](#dc322f)"
+vimcmd_symbol = "[λ](#859900)"
