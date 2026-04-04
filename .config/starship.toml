@@ -14,35 +14,35 @@ $python\
 $character"""
 
 [username]
-style_user = "#859900"
-style_root = "bold #dc322f"
+style_user = "#FF91AF"
+style_root = "bold #E06C75"
 format = "[$user]($style) · "
 show_always = true
 aliases = { "luizgustavo" = "(*ˊᵕˋ*)" }
 
 [hostname]
-style = "#586e75"
+style = "#7F848E"
 disabled = true
 format = "[$hostname]($style) "
 ssh_only = false
 aliases = { "MacBook-Air" = "air" }
 
 [directory]
-style = "#268bd2"
+style = "#61AFEF"
 format = "[$path]($style) "
 truncation_length = 3
 
 [git_branch]
 format = "[:: $branch]($style)"
-style = "#586e75"
+style = "#7F848E"
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "#586e75"
+style = "#7F848E"
 
 [git_status]
-format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](bold #cb4b16) ($ahead_behind$stashed)]($style)"
-style = "#2aa198"
+format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](bold #D19A66) ($ahead_behind$stashed)]($style)"
+style = "#56B6C2"
 conflicted = "​"
 untracked = "​"
 modified = "​"
@@ -53,20 +53,20 @@ stashed = "≡"
 
 [cmd_duration]
 format = "[$duration]($style) "
-style = "#b58900"
+style = "#E5C07B"
 
 [haskell]
 symbol = "λ"
-style = "#6c71c4"
+style = "#C678DD"
 format = '([$symbol $version]($style) )'
 
 [python]
 format = "[$virtualenv]($style) "
-style = "#586e75"
+style = "#7F848E"
 detect_extensions = []
 detect_files = []
 
 [character]
-success_symbol = "[λ](#d33682)"
-error_symbol = "[λ](#dc322f)"
-vimcmd_symbol = "[λ](#859900)"
+success_symbol = "[λ](#ABB2BF)"
+error_symbol = "[λ](#E06C75)"
+vimcmd_symbol = "[λ](#98C379)"
