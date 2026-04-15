@@ -25,8 +25,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 alias vim='nvim'
 
-gpush() {
-	git add .
-	git commit -m "$1"
-	git push
-}
+alias push='git push'
+alias add='git add'
+alias commit='git commit -m'
+
+alias cls='clear'
