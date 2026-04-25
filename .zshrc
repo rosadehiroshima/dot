@@ -1,32 +1,33 @@
+# 1. PATH base e Docker
+export PATH="/usr/local/bin:$PATH"
+
+# 2. Starship Prompt
 eval "$(starship init zsh)"
 
+# 3. NVM (Node Version Manager)
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-alias dot='/usr/bin/git --git-dir=$HOME/.dot.git/ --work-tree=$HOME'
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-# pnpm
+# 4. Aliases
+alias vim='nvim'
+alias push='git push'
+alias add='git add'
+alias commit='git commit -m'
+alias cls='clear'
+
+# 5. PNPM
 export PNPM_HOME="/Users/luizgustavo/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-# pnpm end
 
-# bun completions
-[ -s "/Users/luizgustavo/.bun/_bun" ] && source "/Users/luizgustavo/.bun/_bun"
-
-# bun
+# 6. Bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+[ -s "/Users/luizgustavo/.bun/_bun" ] && source "/Users/luizgustavo/.bun/_bun"
 
-[ -f "/Users/luizgustavo/.ghcup/env" ] && . "/Users/luizgustavo/.ghcup/env" # ghcup-env
-. "$HOME/.local/bin/env"
-
-alias vim='nvim'
-
-alias push='git push'
-alias add='git add'
-alias commit='git commit -m'
-
-alias cls='clear'
+# 7. Outros Envs (GHCup, etc)
+[ -f "/Users/luizgustavo/.ghcup/env" ] && . "/Users/luizgustavo/.ghcup/env"
+[ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
